@@ -95,11 +95,11 @@ byte Utf8ToAscii(byte ascii)
 	case 0 ... 127: // Basic Latin (Decimal 0-127)
 		result = ascii;
 		break;
-	case 0xC2A1 ... 0xC2BF: // Latin1 Supplement (Decimal 160-191)
-		result = bytes[1] - 34;
+	case 0xD090 ... 0xD0BF: // Russian Cyrillic uppercase
+		result = bytes[1] - 18;
 		break;
-	case 0xC380 ... 0xC3BF:
-		result = (bytes[1] | 0xC0) - 34;
+	case 0xD180 ... 0xD18F: // Russian Cyrillic lowercase
+		result = bytes[1] + 30;
 		break;
 	case 0xE282AC: // Euro €
 		result = 0xDE;
