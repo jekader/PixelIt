@@ -96,10 +96,10 @@ byte Utf8ToAscii(byte ascii)
 		result = ascii;
 		break;
 	case 0xD090 ... 0xD0BF: // Russian Cyrillic uppercase
-		result = bytes[1] - 18;
+		result = bytes[1] + 14;
 		break;
 	case 0xD180 ... 0xD18F: // Russian Cyrillic lowercase
-		result = bytes[1] + 30;
+		result = bytes[1] + 79;
 		break;
 	case 0xE282AC: // Euro €
 		result = 0xDE;
