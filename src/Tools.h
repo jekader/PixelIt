@@ -107,6 +107,9 @@ byte Utf8ToAscii(byte ascii)
 	case 0xD084: // Є
 		result = 0xDF;
 		break;
+	case 0xD086: // І
+		result = 0x49; //re-use Latin I glyph
+		break;
 	case 0xD087: // Ї
 		result = 0xE0;
 		break;
@@ -118,6 +121,9 @@ byte Utf8ToAscii(byte ascii)
 		break;
 	case 0xD194: // є
 		result = 0xE3;
+		break;
+	case 0xD196: // і
+		result = 0x69; //re-use Latin i glyph
 		break;
 	case 0xD197: // ї
 		result = 0xE4;
