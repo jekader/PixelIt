@@ -101,28 +101,28 @@ byte Utf8ToAscii(byte ascii)
 	case 0xD180 ... 0xD18F: // Russian Cyrillic lowercase
 		result = bytes[1] + 78;
 		break;
-	case 0xE282AC: // Euro €
+	case 0xD081: // Ё
 		result = 0xDE;
 		break;
-	case 0xE28690: // Arrow left ←
+	case 0xD084: // Є
 		result = 0xDF;
 		break;
-	case 0xE28691: // Arrow up ↑
+	case 0xD087: // Ї
 		result = 0xE0;
 		break;
-	case 0xE28692: // Arrow right →
+	case 0xD08E: // Ў
 		result = 0xE1;
 		break;
-	case 0xE28693: // Arrow down ↓
+	case 0xD191: // ё
 		result = 0xE2;
 		break;
-	case 0XE29885: // Star ★
+	case 0xD194: // є
 		result = 0xE3;
 		break;
-	case 0xF09F9384: // File 📄  
+	case 0xD197: // ї
 		result = 0xE4;
 		break;
-	case 0xE299A5: // Heart ♥
+	case 0xD19E: // ў
 		result = 0xE5;
 		break;
 	case 0xE286A7: // Download ↧
