@@ -131,6 +131,12 @@ byte Utf8ToAscii(byte ascii)
 	case 0xD19E: // ў
 		result = 0xE5;
 		break;
+	case 0xD290: // Ґ
+		result = 0xE6;
+		break;
+	case 0xD291: // ґ
+		result = 0xE7;
+		break;
 	case 0xE286A7: // Download ↧
 		result = 0xE6;
 		break;
